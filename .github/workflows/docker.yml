@@ -8,7 +8,6 @@ on:
       - "*.md"
   push:
     branches:
-      - master
       - main
     paths-ignore:
       - "*.md"
@@ -62,7 +61,7 @@ jobs:
           password: ${{secrets.DOCKERHUB_TOKEN}}
 
       - name: Push
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         uses: docker/build-push-action@v2
         with:
           context: "."
