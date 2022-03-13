@@ -1,3 +1,5 @@
+[![Build, test, and publish Docker Images](https://github.com/rgriffogoes/scraper-notebook/actions/workflows/docker.yml/badge.svg)](https://github.com/rgriffogoes/scraper-notebook/actions/workflows/docker.yml)
+
 # scraper-notebook
 scraper-notebook is a community maintained Jupyter Docker Stack image that aims to provide an environment suitable for web scraping development - including web driver, requests and others (see Dockerfile for details)
 
@@ -37,7 +39,7 @@ services:
     shm_size: '256mb'
 
 ```
-And accompanying env file for simple+insecure password (fine for secure local instances - and no log reading for getting token):
+And accompanying .env file for simple+insecure password (fine for secure local instances - and no log reading for getting token):
 ```
 JUPYTER_TOKEN=mypassword
 ```
