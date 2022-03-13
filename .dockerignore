@@ -1,0 +1,7 @@
+.github
+tests
+.gitattributes
+.gitignore
+Makefile
+README.md
+requirements-dev.txt
