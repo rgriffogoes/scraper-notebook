@@ -66,5 +66,6 @@ jobs:
         with:
           context: "."
           file: "Dockerfile"
+          push: true
           tags: |
             rgriffogoes/scraper-notebook:${{steps.getrefs.outputs.sha12}}, rgriffogoes/scraper-notebook:latest
